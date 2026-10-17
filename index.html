@@ -1,0 +1,184 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consola SQL — RetailHub</title>
+<style>body{margin:0;padding:22px;background:#faf9f8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;background:#fff;border:1px solid #e6e3e0;border-radius:12px;padding:22px}</style>
+</head><body><div class="wrap">
+<div id="rh-root">
+<style>
+#rh-root{--or:#D35A00;--or2:#E06C00;--dk:#222;--gr:#5A5A5A;--bg:#faf9f8;--line:#e6e3e0;
+  font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;color:var(--dk)}
+#rh-root *{box-sizing:border-box}
+.rh-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.rh-head h3{margin:0;font-size:19px;color:var(--or)}
+.rh-sub{color:var(--gr);font-size:13px;margin:0 0 14px}
+.rh-grid{display:grid;grid-template-columns:1fr 250px;gap:16px}
+@media(max-width:820px){.rh-grid{grid-template-columns:1fr}}
+.rh-ed{width:100%;min-height:130px;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  padding:12px;border:1px solid var(--line);border-radius:8px;background:#fff;resize:vertical;color:var(--dk)}
+.rh-ed:focus{outline:2px solid var(--or2);outline-offset:-1px}
+.rh-bar{display:flex;gap:8px;align-items:center;margin:10px 0;flex-wrap:wrap}
+.rh-btn{background:var(--or);color:#fff;border:0;border-radius:7px;padding:8px 16px;font-size:13px;
+  font-weight:600;cursor:pointer}
+.rh-btn:hover{background:var(--or2)}
+.rh-btn:disabled{background:#bbb;cursor:not-allowed}
+.rh-ghost{background:#fff;color:var(--gr);border:1px solid var(--line);border-radius:7px;
+  padding:7px 11px;font-size:12px;cursor:pointer}
+.rh-ghost:hover{border-color:var(--or);color:var(--or)}
+.rh-note{color:var(--gr);font-size:12px}
+.rh-out{margin-top:12px;border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:430px;background:#fff}
+.rh-out table{border-collapse:collapse;width:100%;font-size:13px}
+.rh-out th{background:var(--or);color:#fff;text-align:left;padding:7px 10px;position:sticky;top:0;
+  font-weight:600;white-space:nowrap}
+.rh-out td{border-top:1px solid var(--line);padding:6px 10px;white-space:nowrap}
+.rh-out tr:nth-child(even) td{background:#fcfbfa}
+.rh-num{text-align:right;font-variant-numeric:tabular-nums}
+.rh-err{color:#b3261e;background:#fdf0ef;border:1px solid #f3c9c5;border-radius:8px;
+  padding:11px 13px;font:13px/1.5 ui-monospace,Menlo,monospace;margin-top:12px;white-space:pre-wrap}
+.rh-side{font-size:12.5px}
+.rh-side h4{margin:0 0 8px;font-size:13px;color:var(--or);text-transform:uppercase;letter-spacing:.4px}
+.rh-tbl{border:1px solid var(--line);border-radius:7px;margin-bottom:6px;background:#fff;overflow:hidden}
+.rh-tbl summary{padding:7px 10px;cursor:pointer;font-weight:600;font-size:12.5px;list-style:none}
+.rh-tbl summary::-webkit-details-marker{display:none}
+.rh-tbl summary:hover{color:var(--or)}
+.rh-tbl .rh-cols{padding:0 10px 9px;color:var(--gr);font:11.5px/1.7 ui-monospace,Menlo,monospace}
+.rh-ex{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);
+  border-radius:7px;padding:8px 10px;margin-bottom:6px;cursor:pointer;font-size:12.5px;color:var(--dk)}
+.rh-ex:hover{border-color:var(--or);color:var(--or)}
+.rh-st{padding:13px;color:var(--gr);font-size:13px}
+</style>
+
+<div class="rh-head"><h3>Consola SQL — RetailHub</h3><span class="rh-note" id="rh-status">se încarcă baza…</span></div>
+<p class="rh-sub">Scrii SQL, apeși <b>Rulează</b>, vezi rezultatul. Baza rulează în browserul tău —
+nu trebuie instalat nimic și nu poți strica nimic.</p>
+
+<div class="rh-grid">
+  <div>
+    <textarea class="rh-ed" id="rh-sql" spellcheck="false">SELECT COUNT(*) AS comenzi, ROUND(SUM(TotalAmount), 2) AS revenue
+FROM orders;</textarea>
+    <div class="rh-bar">
+      <button class="rh-btn" id="rh-run" disabled>Rulează</button>
+      <span class="rh-note">sau <b>Ctrl/Cmd + Enter</b></span>
+      <span class="rh-note" id="rh-timing"></span>
+    </div>
+    <div id="rh-result"></div>
+  </div>
+
+  <div class="rh-side">
+    <h4>Exemple</h4>
+    <button class="rh-ex" data-q="SELECT COUNT(*) AS comenzi, ROUND(SUM(TotalAmount),2) AS revenue&#10;FROM orders&#10;WHERE OrderDate >= '2025-09-01' AND OrderDate < '2025-10-01';">Septembrie 2025: comenzi și Revenue</button>
+    <button class="rh-ex" data-q="SELECT s.City, ROUND(SUM(o.TotalAmount),2) AS revenue&#10;FROM orders o&#10;JOIN stores s ON s.StoreID = o.StoreID&#10;GROUP BY s.City&#10;ORDER BY revenue DESC;">Revenue pe magazin</button>
+    <button class="rh-ex" data-q="SELECT c.CategoryName, ROUND(SUM(oi.Quantity * oi.UnitPrice),2) AS vanzari&#10;FROM order_items oi&#10;JOIN products p   ON p.ProductID  = oi.ProductID&#10;JOIN categories c ON c.CategoryID = p.CategoryID&#10;GROUP BY c.CategoryName&#10;ORDER BY vanzari DESC&#10;LIMIT 10;">Top 10 categorii</button>
+    <button class="rh-ex" data-q="SELECT COUNT(*) AS cu_campanie&#10;FROM orders&#10;WHERE CampaignID IS NOT NULL&#10;  AND OrderDate >= '2025-09-01' AND OrderDate < '2025-10-01';">Câte campanii în septembrie?</button>
+
+    <h4 style="margin-top:16px">Cele 9 tabele</h4>
+    <div id="rh-schema"><div class="rh-st">…</div></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+<script>
+(function(){
+  var DB_URL = "sql/RetailHub.db";
+  var db = null;
+  var $ = function(id){ return document.getElementById(id); };
+
+  function esc(s){ return String(s).replace(/[&<>]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]; }); }
+
+  function arataSchema(){
+    var t = db.exec("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name");
+    if(!t.length) return;
+    var html = "";
+    t[0].values.forEach(function(r){
+      var nume = r[0];
+      var info = db.exec("PRAGMA table_info(" + nume + ")");
+      var n = db.exec("SELECT COUNT(*) FROM " + nume)[0].values[0][0];
+      var cols = info.length ? info[0].values.map(function(c){ return c[1]; }).join("\n") : "";
+      html += '<details class="rh-tbl"><summary>' + esc(nume) +
+              ' <span style="color:#5A5A5A;font-weight:400">· ' + n.toLocaleString("ro-RO") +
+              '</span></summary><div class="rh-cols">' + esc(cols) + '</div></details>';
+    });
+    $("rh-schema").innerHTML = html;
+  }
+
+  function ruleaza(){
+    var sql = $("rh-sql").value.trim();
+    if(!sql || !db) return;
+    var t0 = performance.now();
+    try{
+      var res = db.exec(sql);
+      var ms = (performance.now() - t0).toFixed(0);
+      if(!res.length){
+        $("rh-result").innerHTML = '<div class="rh-out"><div class="rh-st">' +
+          'Interogarea a mers, dar nu a întors rânduri.</div></div>';
+        $("rh-timing").textContent = ms + " ms";
+        return;
+      }
+      var r = res[res.length - 1];
+      var MAX = 500, total = r.values.length, randuri = r.values.slice(0, MAX);
+      var h = "<table><thead><tr>" + r.columns.map(function(c){
+        return "<th>" + esc(c) + "</th>"; }).join("") + "</tr></thead><tbody>";
+      randuri.forEach(function(row){
+        h += "<tr>" + row.map(function(v){
+          var num = (typeof v === "number");
+          var txt = (v === null) ? '<span style="color:#aaa">NULL</span>'
+                   : num ? v.toLocaleString("ro-RO", {maximumFractionDigits:2}) : esc(v);
+          return '<td class="' + (num ? "rh-num" : "") + '">' + txt + "</td>";
+        }).join("") + "</tr>";
+      });
+      h += "</tbody></table>";
+      $("rh-result").innerHTML = '<div class="rh-out">' + h + "</div>" +
+        (total > MAX ? '<p class="rh-note">afișez primele ' + MAX + " din " +
+          total.toLocaleString("ro-RO") + " de rânduri</p>" : "");
+      $("rh-timing").textContent = total.toLocaleString("ro-RO") + " rânduri · " + ms + " ms";
+    }catch(e){
+      $("rh-result").innerHTML = '<div class="rh-err">' + esc(e.message) + "</div>";
+      $("rh-timing").textContent = "";
+    }
+  }
+
+  function start(){
+    if(typeof initSqlJs !== "function"){
+      $("rh-status").textContent = "nu s-a putut încărca motorul SQL";
+      return;
+    }
+    initSqlJs({ locateFile: function(f){
+      return "https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/" + f; }})
+    .then(function(SQL){
+      $("rh-status").textContent = "se descarcă baza (3 MB)…";
+      return fetch(DB_URL).then(function(r){
+        if(!r.ok) throw new Error("HTTP " + r.status);
+        return r.arrayBuffer();
+      }).then(function(buf){
+        db = new SQL.Database(new Uint8Array(buf));
+        $("rh-status").textContent = "9 tabele · 14.968 de comenzi · gata";
+        $("rh-run").disabled = false;
+        arataSchema();
+        ruleaza();
+      });
+    })
+    .catch(function(e){
+      $("rh-status").textContent = "eroare la încărcare";
+      $("rh-result").innerHTML = '<div class="rh-err">Nu am putut încărca baza: ' +
+        esc(e.message) + "\n\nVerifică legătura la internet și reîncarcă pagina.</div>";
+    });
+  }
+
+  $("rh-run").addEventListener("click", ruleaza);
+  $("rh-sql").addEventListener("keydown", function(e){
+    if((e.metaKey || e.ctrlKey) && e.key === "Enter"){ e.preventDefault(); ruleaza(); }
+  });
+  Array.prototype.forEach.call(document.querySelectorAll(".rh-ex"), function(b){
+    b.addEventListener("click", function(){
+      $("rh-sql").value = b.getAttribute("data-q");
+      ruleaza();
+    });
+  });
+
+  start();
+})();
+</script>
+</div>
+
+</div></body></html>
