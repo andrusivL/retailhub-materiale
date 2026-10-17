@@ -1,0 +1,301 @@
+ProductID,ProductName,CategoryID,Brand,Cost,Price,Status
+1,Lumen SCHO-001,21,Lumen,18.13,30.09,Active
+2,Nova TOYS-002,19,Nova,116.77,181.07,Inactive
+3,Nova PANT-003,18,Nova,8.4,11.28,Active
+4,Kairo PET -004,25,Kairo,140.68,206.62,Active
+5,Zenit SMAL-005,7,Zenit,922.21,1389.49,Active
+6,Astra PET -006,26,Astra,6.59,11.03,Active
+7,Lumen TABL-007,3,Lumen,1774.67,2190.56,Active
+8,Miro LAPT-008,2,Miro,2727.78,2954.88,Active
+9,Terra STAT-009,28,Terra,8.25,14.6,Active
+10,Pulse FITN-010,22,Pulse,128.61,259.27,Active
+11,Miro PANT-011,18,Miro,46.96,70.12,Active
+12,Apto FITN-012,22,Apto,188.29,355.36,Active
+13,Casa PET -013,26,Casa,28.95,46.35,Active
+14,Nord SMAL-014,7,Nord,439.97,722.51,Active
+15,Astra AUDI-015,5,Astra,619.97,730.78,Active
+16,Lumen HAIR-016,12,Lumen,16.69,44.76,Active
+17,Lumen PET -017,25,Lumen,6.21,11.19,Active
+18,Nova COSM-018,13,Nova,34.53,87.1,Active
+19,Vero FITN-019,22,Vero,855.29,1399.87,Active
+20,Zenit HOME-020,10,Zenit,262.68,366.0,Active
+21,Terra SOFT-021,17,Terra,55.0,75.5,Active
+22,Nova AUDI-022,5,Nova,1010.78,1187.23,Active
+23,Orbit BABY-023,20,Orbit,54.79,118.33,Active
+24,Lumen COOK-024,8,Lumen,30.81,48.66,Active
+25,Giga OUTD-025,24,Giga,343.52,703.95,Active
+26,Terra PANT-026,18,Terra,6.24,9.5,Active
+27,Prima PRIN-027,30,Prima,111.46,200.8,Active
+28,Lumen SNAC-028,15,Lumen,74.03,100.06,Active
+29,Apto SKIN-029,11,Apto,10.7,20.36,Inactive
+30,Miro COOK-030,8,Miro,34.76,51.37,Inactive
+31,Giga STOR-031,9,Giga,480.94,748.1,Active
+32,Vero COOK-032,8,Vero,608.62,983.49,Active
+33,Vero FITN-033,22,Vero,366.59,573.06,Active
+34,Miro LAPT-034,2,Miro,1087.37,1327.83,Active
+35,Lumen SMAL-035,7,Lumen,80.62,113.62,Active
+36,Nova SNAC-036,15,Nova,56.68,83.35,Active
+37,Astra TABL-037,3,Astra,4355.43,5254.03,Active
+38,Zenit OFFI-038,29,Zenit,4.99,8.61,Active
+39,Giga PRIN-039,30,Giga,237.47,389.02,Active
+40,Apto AUDI-040,5,Apto,409.21,491.58,Active
+41,Apto OUTD-041,24,Apto,173.23,336.33,Active
+42,Miro SOFT-042,17,Miro,4.22,6.22,Active
+43,Volt COSM-043,13,Volt,11.77,28.35,Active
+44,Terra FITN-044,22,Terra,588.68,967.13,Active
+45,Casa FITN-045,22,Casa,797.04,1384.41,Active
+46,Vero PRIN-046,30,Vero,176.91,361.1,Inactive
+47,Miro TABL-047,3,Miro,1850.39,2098.04,Active
+48,Orbit HAIR-048,12,Orbit,26.92,59.67,Active
+49,Vero BABY-049,20,Vero,446.3,777.33,Active
+50,Kairo OFFI-050,29,Kairo,13.02,21.03,Active
+51,Giga STOR-051,9,Giga,120.51,189.32,Active
+52,Volt STOR-052,9,Volt,752.25,1260.71,Active
+53,Nord PET -053,27,Nord,20.01,38.71,Active
+54,Kairo PANT-054,18,Kairo,46.33,66.4,Active
+55,Prima PANT-055,18,Prima,3.98,5.29,Active
+56,Prima OFFI-056,29,Prima,262.1,530.26,Active
+57,Kairo SMAL-057,7,Kairo,524.21,773.23,Active
+58,Pulse PRIN-058,30,Pulse,315.47,527.02,Active
+59,Miro OFFI-059,29,Miro,61.8,125.75,Active
+60,Apto STOR-060,9,Apto,49.23,93.44,Active
+61,Miro STAT-061,28,Miro,80.42,158.26,Active
+62,Lumen COOK-062,8,Lumen,21.8,41.73,Active
+63,Nova PET -063,25,Nova,25.78,39.16,Active
+64,Zenit ACCE-064,4,Zenit,4287.92,4779.96,Active
+65,Vero LAPT-065,2,Vero,287.55,306.29,Active
+66,Volt COSM-066,13,Volt,137.38,334.04,Active
+67,Terra SMAR-067,1,Terra,1625.76,1986.96,Active
+68,Casa HAIR-068,12,Casa,55.52,103.63,Active
+69,Astra FITN-069,22,Astra,1100.03,1865.79,Active
+70,Astra SPOR-070,23,Astra,192.4,305.49,Active
+71,Orbit FITN-071,22,Orbit,813.67,1495.08,Active
+72,Casa HOME-072,10,Casa,74.41,128.11,Active
+73,Pulse SNAC-073,15,Pulse,23.02,31.43,Active
+74,Casa FITN-074,22,Casa,38.06,59.09,Active
+75,Nova TABL-075,3,Nova,3604.5,4243.79,Active
+76,Lumen LAPT-076,2,Lumen,620.86,660.71,Active
+77,Miro SNAC-077,15,Miro,20.76,28.56,Active
+78,Vero AUDI-078,5,Vero,2562.32,2915.96,Inactive
+79,Miro PET -079,25,Miro,39.87,72.2,Active
+80,Casa PRIN-080,30,Casa,185.74,447.53,Active
+81,Nord PET -081,25,Nord,170.26,245.8,Active
+82,Miro OFFI-082,29,Miro,16.39,26.77,Active
+83,Lumen PET -083,27,Lumen,85.19,139.02,Active
+84,Lumen SPOR-084,23,Lumen,188.61,289.07,Active
+85,Casa AUDI-085,5,Casa,343.79,392.62,Active
+86,Astra PANT-086,18,Astra,23.07,34.08,Inactive
+87,Giga OFFI-087,29,Giga,202.86,376.53,Active
+88,Volt SMAR-088,1,Volt,4625.03,5415.97,Active
+89,Volt PANT-089,18,Volt,56.89,73.11,Active
+90,Astra COFF-090,16,Astra,3.76,5.2,Active
+91,Astra OUTD-091,24,Astra,77.24,126.47,Active
+92,Kairo TOYS-092,19,Kairo,175.33,295.36,Inactive
+93,Astra STAT-093,28,Astra,75.65,153.03,Active
+94,Lumen STOR-094,9,Lumen,577.52,914.09,Active
+95,Apto COFF-095,16,Apto,4.84,5.1,Active
+96,Kairo PET -096,25,Kairo,7.22,10.56,Active
+97,Prima COOK-097,8,Prima,51.69,75.19,Active
+98,Pulse GAMI-098,6,Pulse,2343.26,2553.64,Active
+99,Astra HOME-099,10,Astra,39.89,66.62,Active
+100,Miro SPOR-100,23,Miro,93.91,164.28,Active
+101,Apto ACCE-101,4,Apto,2839.35,3230.15,Active
+102,Casa HAIR-102,12,Casa,51.76,142.33,Active
+103,Nord SMAR-103,1,Nord,3790.01,4525.06,Active
+104,Zenit SPOR-104,23,Zenit,69.12,114.16,Active
+105,Zenit BABY-105,20,Zenit,366.89,550.06,Active
+106,Nord SKIN-106,11,Nord,142.08,304.65,Active
+107,Casa COOK-107,8,Casa,665.56,910.88,Active
+108,Zenit GAMI-108,6,Zenit,1590.8,1791.7,Active
+109,Miro OFFI-109,29,Miro,118.38,239.51,Active
+110,Giga OUTD-110,24,Giga,327.84,518.5,Active
+111,Miro SCHO-111,21,Miro,269.13,440.76,Active
+112,Prima HOME-112,10,Prima,477.43,738.57,Active
+113,Miro PERS-113,14,Miro,200.08,397.7,Active
+114,Pulse ACCE-114,4,Pulse,2967.54,3421.21,Active
+115,Orbit SMAL-115,7,Orbit,99.09,132.85,Active
+116,Orbit ACCE-116,4,Orbit,3673.6,4371.0,Active
+117,Kairo SMAR-117,1,Kairo,2775.55,3315.36,Inactive
+118,Orbit SCHO-118,21,Orbit,366.24,624.0,Active
+119,Vero COFF-119,16,Vero,27.86,35.54,Active
+120,Apto PET -120,27,Apto,5.94,12.14,Active
+121,Volt AUDI-121,5,Volt,348.89,388.89,Active
+122,Astra BABY-122,20,Astra,200.99,324.37,Active
+123,Apto SNAC-123,15,Apto,73.62,101.76,Active
+124,Terra BABY-124,20,Terra,389.81,744.54,Active
+125,Nord STOR-125,9,Nord,460.77,731.89,Inactive
+126,Orbit SPOR-126,23,Orbit,547.22,996.64,Active
+127,Terra SPOR-127,23,Terra,1033.11,1911.21,Active
+128,Zenit PERS-128,14,Zenit,11.95,27.72,Active
+129,Orbit PET -129,27,Orbit,9.73,18.67,Active
+130,Zenit SNAC-130,15,Zenit,5.09,7.7,Active
+131,Zenit SOFT-131,17,Zenit,33.27,42.93,Active
+132,Nova SMAR-132,1,Nova,227.77,278.07,Active
+133,Nord PET -133,25,Nord,94.5,151.9,Active
+134,Giga PRIN-134,30,Giga,34.35,64.46,Active
+135,Volt TABL-135,3,Volt,1511.45,1690.12,Active
+136,Apto SPOR-136,23,Apto,401.19,727.79,Active
+137,Nova SNAC-137,15,Nova,4.52,6.45,Active
+138,Prima FITN-138,22,Prima,1072.83,1949.83,Active
+139,Orbit BABY-139,20,Orbit,329.01,489.97,Active
+140,Miro SNAC-140,15,Miro,74.5,96.52,Active
+141,Vero SPOR-141,23,Vero,77.99,119.57,Active
+142,Orbit SNAC-142,15,Orbit,79.1,109.27,Active
+143,Kairo SOFT-143,17,Kairo,50.39,66.36,Active
+144,Kairo COSM-144,13,Kairo,16.29,39.23,Active
+145,Zenit STAT-145,28,Zenit,5.3,9.94,Active
+146,Giga PET -146,27,Giga,7.37,10.01,Active
+147,Nord STAT-147,28,Nord,14.63,24.24,Active
+148,Astra PRIN-148,30,Astra,46.35,82.29,Active
+149,Astra COOK-149,8,Astra,794.21,1143.61,Active
+150,Kairo COSM-150,13,Kairo,165.5,392.11,Active
+151,Nord COFF-151,16,Nord,66.66,112.82,Active
+152,Volt ACCE-152,4,Volt,1496.3,2024.44,Active
+153,Astra STAT-153,28,Astra,144.66,282.65,Active
+154,Astra SCHO-154,21,Astra,12.73,23.39,Active
+155,Miro SKIN-155,11,Miro,73.05,183.91,Active
+156,Lumen SCHO-156,21,Lumen,265.57,411.67,Active
+157,Orbit PERS-157,14,Orbit,171.04,385.31,Active
+158,Prima OFFI-158,29,Prima,3.87,6.01,Active
+159,Pulse HAIR-159,12,Pulse,46.31,103.42,Active
+160,Giga TABL-160,3,Giga,2032.67,2578.87,Active
+161,Nord PRIN-161,30,Nord,124.51,230.39,Active
+162,Prima OFFI-162,29,Prima,31.7,68.16,Active
+163,Astra TOYS-163,19,Astra,53.34,104.43,Active
+164,Orbit STAT-164,28,Orbit,94.72,165.68,Active
+165,Apto SPOR-165,23,Apto,150.23,304.78,Active
+166,Orbit PRIN-166,30,Orbit,138.75,246.82,Active
+167,Kairo PET -167,25,Kairo,135.12,203.57,Active
+168,Nord SCHO-168,21,Nord,17.02,26.81,Active
+169,Pulse LAPT-169,2,Pulse,2023.74,2372.82,Active
+170,Zenit SMAL-170,7,Zenit,52.87,78.22,Active
+171,Casa PET -171,27,Casa,10.55,21.26,Active
+172,Miro PET -172,26,Miro,11.06,15.93,Active
+173,Lumen STAT-173,28,Lumen,172.88,299.3,Active
+174,Prima PET -174,26,Prima,43.37,64.38,Active
+175,Miro FITN-175,22,Miro,875.66,1498.17,Active
+176,Miro COFF-176,16,Miro,3.3,5.15,Active
+177,Kairo SCHO-177,21,Kairo,11.07,20.45,Active
+178,Vero LAPT-178,2,Vero,5178.52,5451.07,Active
+179,Volt COOK-179,8,Volt,738.32,1217.18,Active
+180,Vero TOYS-180,19,Vero,260.9,474.07,Active
+181,Nord PET -181,27,Nord,67.01,90.11,Inactive
+182,Prima SNAC-182,15,Prima,68.12,109.97,Active
+183,Nord PANT-183,18,Nord,71.63,100.46,Active
+184,Nova TABL-184,3,Nova,2570.91,2966.17,Active
+185,Terra LAPT-185,2,Terra,3366.83,3966.85,Active
+186,Kairo TOYS-186,19,Kairo,36.83,64.74,Active
+187,Zenit PET -187,26,Zenit,125.43,250.16,Active
+188,Nova PET -188,26,Nova,13.91,22.52,Active
+189,Volt HAIR-189,12,Volt,119.79,268.6,Active
+190,Prima SOFT-190,17,Prima,4.72,7.29,Inactive
+191,Orbit SOFT-191,17,Orbit,37.02,49.99,Active
+192,Astra SNAC-192,15,Astra,39.17,56.99,Inactive
+193,Kairo PERS-193,14,Kairo,123.75,212.88,Inactive
+194,Casa TABL-194,3,Casa,286.04,339.73,Active
+195,Vero COSM-195,13,Vero,204.02,396.33,Active
+196,Terra STAT-196,28,Terra,158.98,282.59,Active
+197,Vero PERS-197,14,Vero,49.06,110.84,Active
+198,Kairo SKIN-198,11,Kairo,40.41,102.06,Active
+199,Prima FITN-199,22,Prima,1033.46,2168.2,Active
+200,Casa PET -200,26,Casa,9.97,17.38,Inactive
+201,Apto FITN-201,22,Apto,54.63,86.19,Active
+202,Terra HOME-202,10,Terra,360.86,622.85,Active
+203,Zenit AUDI-203,5,Zenit,2469.35,2921.02,Active
+204,Nova TOYS-204,19,Nova,39.47,69.05,Active
+205,Orbit BABY-205,20,Orbit,405.67,702.65,Active
+206,Astra PRIN-206,30,Astra,53.4,90.27,Inactive
+207,Volt TABL-207,3,Volt,320.39,372.53,Active
+208,Lumen SNAC-208,15,Lumen,15.34,21.57,Active
+209,Volt OFFI-209,29,Volt,4.02,7.97,Active
+210,Vero COFF-210,16,Vero,32.68,51.83,Active
+211,Apto HAIR-211,12,Apto,48.35,103.15,Active
+212,Orbit COOK-212,8,Orbit,176.69,314.63,Active
+213,Volt SMAL-213,7,Volt,611.01,946.44,Active
+214,Prima GAMI-214,6,Prima,310.97,345.75,Active
+215,Casa TABL-215,3,Casa,1109.17,1300.0,Active
+216,Orbit TOYS-216,19,Orbit,123.75,186.32,Active
+217,Prima ACCE-217,4,Prima,1090.74,1340.01,Active
+218,Astra TABL-218,3,Astra,1291.38,1505.51,Active
+219,Lumen SOFT-219,17,Lumen,3.9,6.18,Active
+220,Prima SOFT-220,17,Prima,42.87,55.52,Active
+221,Terra HAIR-221,12,Terra,94.58,234.27,Active
+222,Pulse GAMI-222,6,Pulse,2402.81,2529.27,Active
+223,Casa PET -223,25,Casa,94.22,135.51,Active
+224,Giga STAT-224,28,Giga,303.22,569.27,Active
+225,Nord SNAC-225,15,Nord,37.41,55.26,Active
+226,Lumen SNAC-226,15,Lumen,4.13,5.31,Active
+227,Apto BABY-227,20,Apto,212.55,322.46,Active
+228,Giga SNAC-228,15,Giga,65.96,101.86,Active
+229,Lumen SOFT-229,17,Lumen,5.95,8.82,Active
+230,Nord SOFT-230,17,Nord,39.56,57.39,Inactive
+231,Casa SOFT-231,17,Casa,27.26,40.78,Active
+232,Lumen FITN-232,22,Lumen,535.88,1008.61,Active
+233,Kairo SKIN-233,11,Kairo,11.99,25.44,Active
+234,Orbit SKIN-234,11,Orbit,11.94,24.17,Active
+235,Astra SCHO-235,21,Astra,282.67,426.48,Active
+236,Lumen SCHO-236,21,Lumen,291.43,530.51,Active
+237,Casa SCHO-237,21,Casa,242.91,397.24,Active
+238,Lumen PET -238,25,Lumen,55.36,89.21,Active
+239,Apto HOME-239,10,Apto,633.39,1116.88,Active
+240,Astra FITN-240,22,Astra,196.25,378.24,Active
+241,Nord AUDI-241,5,Nord,335.56,419.66,Active
+242,Nord LAPT-242,2,Nord,1287.34,1369.7,Active
+243,Giga BABY-243,20,Giga,58.21,96.92,Active
+244,Nord OFFI-244,29,Nord,267.86,435.19,Active
+245,Terra SNAC-245,15,Terra,52.77,76.75,Active
+246,Giga PET -246,26,Giga,87.78,127.25,Active
+247,Lumen STAT-247,28,Lumen,48.63,104.96,Active
+248,Volt PET -248,25,Volt,13.65,20.75,Active
+249,Apto TABL-249,3,Apto,4572.07,5452.59,Active
+250,Prima COSM-250,13,Prima,50.06,129.92,Active
+251,Kairo COOK-251,8,Kairo,23.13,42.37,Active
+252,Kairo LAPT-252,2,Kairo,730.09,812.75,Active
+253,Kairo PET -253,25,Kairo,103.13,164.79,Inactive
+254,Orbit PANT-254,18,Orbit,75.33,107.92,Active
+255,Vero COOK-255,8,Vero,122.95,208.33,Active
+256,Miro PET -256,27,Miro,151.81,252.38,Active
+257,Lumen SPOR-257,23,Lumen,68.8,105.07,Active
+258,Nova SOFT-258,17,Nova,76.27,114.81,Inactive
+259,Prima COSM-259,13,Prima,124.85,317.79,Active
+260,Vero PET -260,26,Vero,7.41,12.27,Active
+261,Pulse PET -261,25,Pulse,73.89,119.43,Active
+262,Pulse PET -262,27,Pulse,127.19,195.06,Active
+263,Terra PET -263,26,Terra,11.62,17.87,Inactive
+264,Giga OFFI-264,29,Giga,4.81,6.97,Active
+265,Casa STOR-265,9,Casa,29.77,43.79,Active
+266,Nord STOR-266,9,Nord,51.23,74.32,Active
+267,Zenit OFFI-267,29,Zenit,316.16,554.2,Active
+268,Pulse PET -268,26,Pulse,7.79,13.26,Active
+269,Volt PANT-269,18,Volt,11.62,17.68,Active
+270,Prima GAMI-270,6,Prima,2594.47,3172.28,Active
+271,Astra BABY-271,20,Astra,499.0,797.39,Active
+272,Nova HAIR-272,12,Nova,38.17,134.32,Active
+273,Prima AUDI-273,5,Prima,3966.3,4516.75,Active
+274,Nord HAIR-274,12,Nord,44.44,87.49,Active
+275,Zenit HAIR-275,12,Zenit,37.3,84.09,Active
+276,Astra COOK-276,8,Astra,1017.82,1397.89,Inactive
+277,Orbit PRIN-277,30,Orbit,119.36,215.66,Active
+278,Lumen SPOR-278,23,Lumen,1142.38,2141.14,Active
+279,Casa SNAC-279,15,Casa,7.37,9.87,Active
+280,Orbit FITN-280,22,Orbit,310.98,398.34,Inactive
+281,Miro STAT-281,28,Miro,15.12,26.36,Active
+282,Giga ACCE-282,4,Giga,5495.81,5845.71,Active
+283,Lumen SMAR-283,1,Lumen,1025.46,1126.23,Active
+284,Volt TABL-284,3,Volt,793.0,901.6,Active
+285,Nord PET -285,25,Nord,44.12,68.12,Active
+286,Pulse FITN-286,22,Pulse,465.92,784.27,Active
+287,Kairo PET -287,25,Kairo,209.21,282.63,Inactive
+288,Prima HOME-288,10,Prima,57.66,96.78,Active
+289,Kairo SOFT-289,17,Kairo,66.86,99.17,Active
+290,Pulse SCHO-290,21,Pulse,67.84,106.41,Active
+291,Apto TOYS-291,19,Apto,395.82,719.43,Active
+292,Zenit PET -292,27,Zenit,127.45,232.8,Active
+293,Orbit SCHO-293,21,Orbit,42.27,62.63,Inactive
+294,Astra SCHO-294,21,Astra,470.86,739.81,Active
+295,Casa HOME-295,10,Casa,259.84,391.78,Active
+296,Prima BABY-296,20,Prima,24.6,38.88,Active
+297,Zenit COSM-297,13,Zenit,14.97,29.76,Active
+298,Astra SNAC-298,15,Astra,9.24,14.34,Active
+299,Casa STAT-299,28,Casa,138.98,253.3,Active
+300,Giga SMAL-300,7,Giga,496.73,937.47,Active
